@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,33 +10,43 @@
 </head>
 <body>
     <!--Section heading-->
-    <header>Login Page</header>
+    <header>
+        <h1>Login Page</h1>
+    </header>
 
     <!--Section with navbar-->
     <nav> 
-        <ul>
-         <li>
-             <a href="login.html">Login</a>
-         </li>
-         <li>
-             <a href="registration.html">Registration</a>
-         </li>
+        <ul id="navbar">
          <li>
              <a href="postimage.html">Postimage</a>
          </li>
          <li>
              <a href="viewpost.html">Viewpost</a>
          </li>
+         <li id="centeropt">          <!--Middle button will have margins on each side-->
+             <a href="index.html">Welcome</a>
+         </li>
+         <li>
+             <a href="login.html">Login</a>
+         </li>
+         <li>
+             <a href="registration.html">Registration</a>
+         </li>
         </ul> 
      </nav>
+     <div class= "logcontent">
      <h4>login</h4>
      <!--Login Uname/Pw in form tags-->
      <form>
-    <input type="text" placeholder="Enter username">
-    <input type="Password" placeholder="Enter Password">
+    Username
+    <input type="text" class="txtbox" placeholder="Enter username">
+    <br/>
+    Password 
+    <input type="Password" class="pwbox" placeholder="Enter Password">
     </form>
     <!--login button-->
     <button type="submit">Login</button>
-
+    </div>
+    <footer id="ftr"> a website created by Jaime M. Guardado &reg;</footer>
 </body>
 </html>

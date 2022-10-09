@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,34 +10,48 @@
 </head>
 <body>
     <!--Section heading-->
-    <header>Registration Page</header>
-
-    <!--Section with navbar-->
+    <header>
+        <h1>Registration Page</h1>
+    </header>
     <nav> 
-        <ul>
-         <li>
-             <a href="login.html">Login</a>
-         </li>
-         <li>
-             <a href="registration.html">Registration</a>
-         </li>
+        <ul id="navbar">
          <li>
              <a href="postimage.html">Postimage</a>
          </li>
          <li>
              <a href="viewpost.html">Viewpost</a>
          </li>
+         <li id="centeropt">          <!--Middle button will have margins on each side-->
+             <a href="index.html">Welcome</a>
+         </li>
+         <li>
+             <a href="login.html">Login</a>
+         </li>
+         <li>
+             <a href="registration.html">Registration</a>
+         </li>
         </ul> 
      </nav>
+     <div class="regcontent">
      <h4>Registration</h4>
      <!--Login Uname/email/Pw +confirm PW in form tags-->
      <form>
-        <input type="text" placeholder="Enter username">
-        <input type="text" placeholder="Enter Email Address">
-        <input type="Password" placeholder="Enter Password">
-        <input type="Password" placeholder="Confirm Password">
+        Username
+        <input type="text" class="txtbox" placeholder="Enter username">
+         </form>
+         <form>
+            Email 
+        <input type="text" class="txtbox" placeholder="Enter Email Address">
         </form>
-
+        <form>
+            Password
+        <input type="Password" class="pwbox" placeholder="Enter Password">
+        </form>
+        <form>
+            Confirm Password
+        <input type="Password" class="pwbox" placeholder="Confirm Password">
+        </form>
+ 
         <!--TOS and checkbox-->
         <div class="TOS">
             <a>Check box to confirm you are atleast 13 Years old</a>
@@ -46,7 +61,7 @@
         </div>
         <!--submit button-->
         <button type="submit">submit</button>
-        <div class="TOS">
-    </div>
+</div>
+    <footer id="ftr"> a website created by Jaime M. Guardado &reg;</footer>
 </body>
 </html>

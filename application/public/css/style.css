@@ -1,8 +1,97 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+#navbar {     /* Nav bar stylizations*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: peachpuff;
+  opacity: 80%;
 }
 
+ul#navbar li {
+  float:left; /*turns ul from vertical to horizontal*/
+}
+
+ul#navbar li a {
+  display: inline-block;
+  color: #000000;
+  font-weight:bold;
+  padding: 8px 32px; /* 32px on the left and right of each li, 8px of space up and down each li */
+  text-decoration: none;
+}
+ul#navbar li a:hover {
+  background-color: orange;
+  color: white;
+}
+#centeropt {
+  margin-left: 225px;
+  margin-right: 231.5px;
+}
+#welcomemsg{    /*This id is for the ascii art on index*/
+  color:#000000;
+  font-weight: 100;
+  font-size: 15px;
+}
+#greet {    /*this id is for the welcome message on index */
+  font: Helvetica, sans-serif;
+  font-size: 17px;
+  font-style: italic;
+}
+body {      /*Body with gradient background and centered text **Note: Align textboxes** */
+  padding: 50px;
+  font: 14px Helvetica, Arial, sans-serif;
+  border-color: rgb(255, 213, 122);
+  border-width: 15px;
+  border-style: groove;
+  background: linear-gradient(217deg, rgba(113, 160, 148, 0.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(186, 135, 241, 0.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(249, 214, 88, 0.8), rgba(0,0,255,0) 70.71%);
+  background-color: rgb(131, 131, 181);
+  margin-top: 50px;
+  margin-left: 110px;
+  margin-right: 110px;
+  text-align: center;
+  color:rgba(43, 61, 57, 0.8);
+}
+div.logcontent{
+  display: inline-block;
+}
+input.txtbox {    /*Stylization for "text" input tags*/
+   border: none;
+   background-color: rgb(239, 224, 190);
+   box-shadow: 5px 5px #545468; 
+   margin-bottom: 10px;
+}
+input.pwbox {    /*Stylization for "password" input tags*/
+  border: none;
+  background-color: rgb(239, 224, 190);
+  box-shadow: 5px 5px #545468; 
+  margin-bottom: 10px;
+  display: inline-block;
+}
+input.descbox{       /* description box css, ***CURRENTLY NOT DISPLAYING  */
+  background-color: rgb(239, 224, 190);
+  box-shadow: 5px 5px #545468;
+}
+#submittxt{     /*Stylization for "submit" input tags*/
+  font: Helvetica, arial, a;
+  display: inline;
+}
+button{     /*button stylization*/
+  background-color: peachpuff;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+div.TOS {
+  margin-top:5px;
+}
+#ftr {      /*Footer element centered and darker than background*/
+  text-align: center;
+  font-family: Monospace;
+  font-size: 15px;
+  background-color: peachpuff;
+  margin-top: 15px;
+  opacity: 80%;
+}
 a {
-  color: #00B7FF;
+  color: rgb(233, 200, 116);
 }
