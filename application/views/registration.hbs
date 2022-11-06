@@ -1,0 +1,42 @@
+
+<body>
+     <!--document title-->
+    <title>Registration</title> 
+    <!--Section heading-->
+    <header>
+        <h1>Registration Page</h1>
+    </header>
+     <div class="regcontent">
+     <h4>Registration</h4>
+     <!--Login Uname/email/Pw +confirm PW in form tags-->
+     <form>
+        Username
+        <input type="text" id ="username" class="txtbox" placeholder="Enter username" required>
+         </form>
+         <form>
+            Email 
+        <input type="email" id ="email" class="txtbox" placeholder="Enter Email Address" required>
+        </form>
+        <form>
+            Password
+        <input type="Password" id ="password" class="pwbox" placeholder="Enter Password" required>
+        </form>
+        <form>
+            Confirm Password
+        <input type="Password" id ="cpassword" class="pwbox" placeholder="Confirm Password" required>
+        </form>
+ 
+        <!--TOS and checkbox-->
+        <div class="TOS">
+            <a>Check box to confirm you are atleast 13 Years old</a>
+            <input type="checkbox" required>
+            <br> 
+            <a href="#" required>TOS and Privacy Rule</a>
+        </div>
+        <!--submit button-->
+        <button type="submit">submit</button>
+</div>
+    <script defer type="text/javascript" 
+src="../js/validation.js"></script> 
+</body>
+</html>
