@@ -12,15 +12,16 @@
      <div class= "logcontent">
      <h4>login</h4>
      <!--Login Uname/Pw in form tags-->
-     <form>
+     <form id="login-form" class ="input-form" action="/users/login" method="POST" enctype="application/x-www-form-urlencoded">
     Username
-    <input type="text" class="txtbox" placeholder="Enter username">
+    <input type="text" class="txtbox" placeholder="Enter username" name="username" required>
     <br/>
     Password 
-    <input type="Password" class="pwbox" placeholder="Enter Password">
-    </form>
+    <input type="Password" class="pwbox" placeholder="Enter Password" name="password" required>
     <!--login button-->
+    <br/>
     <button type="submit">Login</button>
     </div>
+    </form>
 </body>
 </html>
