@@ -40,6 +40,25 @@ router.post("/create", function(req,res,next){
         }
     })
     .catch(err => next(err));
+});
+
+router.get("/search", function(req, res, next){
+  let searchTerm= `%${req.query.searchTerm}%`;
+  let originalSearchTerm = req.query.searchTerm;
+  let baseSQL = `select
+  d, title, description, thumbnail, concat_ws(" ", title,description) as
+  haystack
+  FROM posts
+  HAVING haystack like ?;`;
+  db.query(baseSQL,[searchTerm])
+  .then(function([results, fields]){
+    res.locals.results = results;
+    req.flash("success", `${results.length} results found`);
+    req.session.save(function(saveErr){
+      res.render('index');
+    })
+  })
+  res.render('index');
 })
 
 module.exports = router;

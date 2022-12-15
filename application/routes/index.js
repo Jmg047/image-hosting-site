@@ -1,6 +1,6 @@
 var express = require('express');
 const {isLoggedIn} = require('../middleware/protectors');
-const {getRecentPosts} = require('../middleware/posts')
+const {getRecentPosts, getPostsById} = require('../middleware/posts')
 var router = express.Router();
 
 
@@ -10,27 +10,36 @@ router.get('/', getRecentPosts, function(req, res, next) {
 });
 
 router.get("/index",function(req, res){
-  res.render('index', {css:["../css/style.css"]});
+  res.render('index', {css:["style.css"]});   
 });
 
 router.get("/login",function(req, res){
-  res.render('login', {css:["../css/style.css"]});
+  res.render('login', {css:["style.css"]});
 });
 
 router.get("/postimage", isLoggedIn ,function(req, res){
-  res.render('postimage', {css:["../css/style.css"]});
+  res.render('postimage', {css:["style.css"]});
+});
+router.get("/posts/:id(\\d+)", getPostsById, function(req, res){
+  console.log(req.params);
+  res.render('viewpost',{js:["viewpost.js"]});            
+});   
+
+router.get("/search", function(req, res, next){
+  console.log(req.query);
+  req.query['search-text']
 });
 
 router.get("/registration",function(req, res){
-  res.render('registration', {css:["../css/style.css"]});
+  res.render('registration', {css:["style.css"]});
 });
 
 router.get("/js/validation.js",function(req, res){
-  res.render('validation', {css:["../css/style.css"]});
+  res.render('validation', {css:["style.css"]});
 });
 router.get("/viewpost",function(req, res){
   console.log(req.params);
-  res.render('viewpost');
+  res.render('viewpost',{js:["viewpost.js"]});
 });
 
 module.exports = router;

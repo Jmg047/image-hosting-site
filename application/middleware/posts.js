@@ -9,5 +9,20 @@ module.exports = {
             next();
         })
         .catch(err => next(err));
-    }
-}
+    },
+    getPostsById: function (req, res, next) {
+        let postId = req.params.id;
+        let baseSQL = `SELECT p.title, p.description, p.image, p.createdAt, u.username
+        FROM posts p
+        JOIN user u
+        ON p.fk_authorId=u.id
+        where p.id=32;`;
+        db.query(baseSQL, [postId])
+        .then(function([results, fields]){
+            if(results && results.length == 1){
+                res.locals.currentPost = results[0];
+            }
+            next();
+        })
+    },
+};
