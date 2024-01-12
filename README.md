@@ -1,27 +1,11 @@
-# CSC 317 Course Project
-
-## Purpose
-
-The purpose of this repository is to store all the code for your web application. This also includes the history of all commits made and who made them. Only code submitted on the master branch will be graded.
-
-Please follow the instructions below and fill in the information requested when prompted.
-
-## Student Information
-
-|               | Information   |
-|:-------------:|:-------------:|
-| Student Name  | Jaime Guardado     |
-| Student ID    | 920290979       |
-| Student Email | jguardado1@mail.sfsu.edu    |
-
-
+# image hosting site
+It is similar to imgur.
 
 # Build/Run Instructions
+Make sure to install necessary dependencies with `npm i`
 
 ## Build Instructions
-1. steps here
-2. steps here
+1. `npm run builddb`
 
 ## Run Instructions
-1. steps here
-2. steps here 
+1. `npm run start` 

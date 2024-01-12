@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post an image here</title>
+</head>
+<body>
+    <!--Section heading-->
+    <header>
+        <h1>Post image</h1>
+    </header>
+
+    <!--Section with navbar-->
+    <nav> 
+        <ul id="navbar">
+         <li>
+             <a href="postimage.html">Postimage</a>
+         </li>
+         <li>
+             <a href="viewpost.html">Viewpost</a>
+         </li>
+         <li id="centeropt">          <!--Middle button will have margins on each side-->
+             <a href="index.html">Welcome</a>
+         </li>
+         <li>
+             <a href="login.html">Login</a>
+         </li>
+         <li>
+             <a href="registration.html">Registration</a>
+         </li>
+        </ul> 
+     </nav>
+     <h4>Post an image here</h4>
+     <!--User inputs post title, post desc, an image, and Acceptable use policy-->
+     <p>Title</p>
+     <form>
+        <input type="text" class="txtbox" placeholder="Post Title">
+    </form>
+        <p>Description</p>
+    <form>
+        <textarea name="paragraph_text" class="descbox" cols="50" rows="10"></textarea>
+    </form>
+    <p>Upload Image</p>
+    <form>
+        <input type="image" placeholder="upload">
+    </form>
+        <a href="#">Acceptable Use Policy</a>
+        <input type="checkbox"> 
+        <br>
+        <!--submit post-->
+        <button>Submit Post</button>
+        <footer id="ftr"> a website created by Jaime M. Guardado &reg;</footer>
+</body>
+</html>

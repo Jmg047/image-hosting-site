@@ -1,0 +1,36 @@
+<html>
+    {{log this}}
+<body>
+    <main class="post-container">
+    <title>View User's Posts</title>
+    <!--Section heading-->
+    <header>
+        <h1>View Posts</h1>
+    </header>
+
+    <div class"post-info">
+    <!--Section with navbar-->
+   
+     <!--section for post title-->
+
+     <h2 class="post-title">{{currentpost.title}}</h2>
+
+     <p class="post-description">{{currentPost.description}}</p>
+     <!--section for author's name-->
+     <p class="author"> {{currentPost.username}}</p>
+     <!--section for post creation time-->
+     <h1>{{formatDate currentPost.createdAt}} </h1>
+    </div>
+     <!--section for post will go here-->
+     <img class="img-container" src="{{currentPost.image}}">
+        <div class="comment-section">
+            <div class="comment-section">
+                <div class="comment-box">
+                    <textarea id="comment-text" class="comment-box-text"></textarea>
+                </div>
+            </div>
+        </div>
+
+     </main>
+</body>
+</html>
